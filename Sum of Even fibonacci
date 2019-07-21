@@ -1,0 +1,14 @@
+def fibonaccievensum(n):
+	sum = 0
+	a = 1
+	b = 1
+	c = a + b
+
+	while c < n:
+		sum += c
+		a = b + c
+		b = a + c
+		c = a + b
+	return sum
+
+print(fibonaccievensum(4000000))
